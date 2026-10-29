@@ -1,136 +1,444 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+
+    <title>Portfolio - Antonia Makosso</title>
 </head>
 
 <body>
 
+    <!-- ==================== BURGER MENU ==================== -->
+
     <div class="burger" id="burger">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
+
+    <!-- ==================== SIDEBAR ==================== -->
+
     <nav class="sidebar">
-        <img src="/image/profil2.jpeg" class="profil">
+
+        <img src="./image/profil2.jpeg"
+             class="profil"
+             alt="Photo de profil">
+
         <a href="#apropos">À propos</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#competences">Compétences</a>
         <a href="#contact">Contact</a>
+
     </nav>
+
+
+    <!-- ==================== CONTENU PRINCIPAL ==================== -->
 
     <main class="content">
 
+
+        <!-- ==================== ACCUEIL ==================== -->
+
         <section class="hero">
+
             <h1>Développeuse Web</h1>
-            <p><i>Étudiante en Développement web – Découvrez mes projets et mon évolution</i></p>
+
+            <p>
+                <i>
+                    Étudiante en développement web – Voir mes projets
+                </i>
+            </p>
+
         </section>
+
+
+        <!-- ==================== À PROPOS ==================== -->
 
         <section id="apropos" class="sectionBox">
+
             <h2>À propos</h2>
-            <p>Je m’appelle Antonia, je suis développeuse web junior, motivée et toujours à la recherche de nouvelles opportunités pour apprendre, progresser et mettre mes compétences au service de projets ambitieux.</p>
+
+            <p>
+                Je suis Antonia, étudiante en Bachelor Informatique Web et
+                Applicatif. Je m’intéresse particulièrement au développement
+                web, au Front-End et à l’UI/UX. Je recherche actuellement
+                une alternance pour poursuivre ma formation en B3 et
+                développer mon expérience professionnelle.
+            </p>
+
         </section>
 
-        <!-- PORTFOLIO -->
+
+        <!-- ==================== PORTFOLIO ==================== -->
+
         <section id="portfolio" class="sectionBox">
+
             <h2>Portfolio</h2>
 
             <div class="portfolioContainer">
-                <div class="cardItem">
-                    <img src="./image/image1.jpg">
-                    <h3>Projet 1</h3>
-                    <p>Description rapide.</p>
-                    <a href="#" class="btn" >Voir le projet</a>
-                </div>
+
+
+                <!-- Projet 1 -->
 
                 <div class="cardItem">
-                    <img src="./image/image2.jpg">
-                    <h3>Projet 2</h3>
-                    <p>Description rapide.</p>
-                    <a href="#" class="btn" >Voir le projet</a>
+
+                    <img src="./image/image1.jpg"
+                         alt="Aperçu de ma To-Do List">
+
+                    <h3>To-Do List</h3>
+
+                    <p>Application de gestion de tâches permettant d'ajouter
+                      et de supprimer des tâches.</p>
+                    <p class="projetTech"> HTML5 · CSS3 · JavaScript</p>
+
+                    <a href="https://github.com/yiawich/todo-list"
+                       target="_blank"
+                       class="btn">
+                        Voir le code
+                    </a>
+
                 </div>
 
+
+                <!-- Projet 2 -->
+
                 <div class="cardItem">
-                    <img src="./image/image3.jpg">
-                    <h3>Projet 3</h3>
-                    <p>Description rapide.</p>
-                    <a href="#" class="btn" >Voir le projet</a>
+
+                    <img src="./image/image2.jpg"
+                         alt="Projet 2">
+
+                    <h3>Projet React / Menu interactif</h3>
+
+                    <p>
+                       Site de restaurant réalisé avec React, présentant les menus, les spécialités et l’équipe.
+                    </p>
+                    <p class="projetTech">React.js · JavaScript · HTML5 · CSS3</p>
+                    <a href="https://github.com/yiawich/restaurant-react" class="btn">
+                        Voir le code
+                    </a>
+
                 </div>
+
+
             </div>
+
         </section>
 
-        <!-- COMPETENCES -->
+
+        <!-- ==================== COMPÉTENCES ==================== -->
+
         <section id="competences" class="sectionBox">
+
             <h2>Mes compétences</h2>
 
-            <div class="skill">
-                <span class="label">HTML/CSS</span>
-                <div class="bar"><div class="progress skills-htmlcss">90%</div></div>
+
+            <!-- FRONT-END -->
+
+            <div class="competenceGroup">
+
+                <h3>Front-End</h3>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        HTML
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-html"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        CSS3
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-css3"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        JavaScript
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-js"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        React
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-react"></div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="skill">
-                <span class="label">JavaScript</span>
-                <div class="bar"><div class="progress skills-js">70%</div></div>
+
+            <!-- BACK-END -->
+
+            <div class="competenceGroup">
+
+                <h3>Back-End</h3>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        PHP
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-php"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        Node.js
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-node"></div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="skill">
-                <span class="label">PHP</span>
-                <div class="bar"><div class="progress skills-php">85%</div></div>
+
+            <!-- OUTILS -->
+
+            <div class="competenceGroup">
+
+                <h3>Outils</h3>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        Git
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-git"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        GitHub
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-github"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        VS Code
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-vscode"></div>
+                    </div>
+
+                </div>
+
             </div>
+
+
+            <!-- DESIGN -->
+
+            <div class="competenceGroup">
+
+                <h3>Design & UI/UX</h3>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        Figma
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-figma"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span class="label">
+                        UI/UX
+                    </span>
+
+                    <div class="bar">
+                        <div class="progress skills-uiux"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <!-- CONTACT -->
+
+        <!-- ==================== CONTACT ==================== -->
+
         <section id="contact" class="sectionBox">
+
             <h2>Contact</h2>
 
-            <form action="https://formspree.io/f/xjknpwdp" method="POST" class="contactForm">
-                 
-                <label>Nom</label>
-                <input type="text" name="nom" required>
+            <form action="https://formspree.io/f/xjknpwdp"
+                  method="POST"
+                  class="contactForm">
 
-                <label>Prénom</label>
-                <input type="text" name="prenom" required>
 
-                <label>Age</label>
-                <input type="date" name="age" required>
+                <label for="nom">
+                    Nom
+                </label>
 
-                <label>Email</label>
-                <input type="email" name="email" required>
+                <input type="text"
+                       id="nom"
+                       name="nom"
+                       required>
 
-                <label>Mot de passe</label>
-                <input type="password" name="motdepasse" required>
 
-                <label>Message</label>
-                <textarea name="message" rows="5" required></textarea>
+                <label for="prenom">
+                    Prénom
+                </label>
 
-                <button type="submit">Envoyer</button>
+                <input type="text"
+                       id="prenom"
+                       name="prenom"
+                       required>
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          required></textarea>
+
+
+                <button type="submit">
+                    Envoyer
+                </button>
+
             </form>
+
         </section>
 
-        <!-- FOOTER-->
-
-        <footer class="footer">
-           <div class="footer-icons">
-               <a href="https://www.linkedin.com/in/antonia-yia-wich-omega-makosso-kambissi-433ab0366/" target="_blank" aria-label="LinkedIn">
-                  <i class="bi bi-linkedin"></i>
-               </a>
-
-               <a href="https://github.com/antonia-bot/Portfolio" target="_blank" aria-label="GitHub">
-                   <i class="bi bi-github"></i>
-                </a>
-
-                <a href="antoniamakosso05@gmail.com" aria-label="Email">
-                    <i class="bi bi-envelope"></i>
-                </a>
-            </div>
-               <p class="footer-text">© 2025 – Antonia | Portfolio</p>
-         </footer>
-
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="footer">
+
+        <div class="footer-icons">
+
+
+            <!-- LinkedIn -->
+
+            <a href="https://www.linkedin.com/in/antonia-makosso-433ab0366/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+
+                <i class="bi bi-linkedin"></i>
+
+            </a>
+
+
+            <!-- GitHub -->
+
+            <a href="https://github.com/antonia-bot/Portfolio"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub">
+
+                <i class="bi bi-github"></i>
+
+            </a>
+
+
+            <!-- Email -->
+
+            <a href="mailto:antoniamakosso05@gmail.com"
+               aria-label="Email">
+
+                <i class="bi bi-envelope"></i>
+
+            </a>
+
+        </div>
+
+
+        <p class="footer-text">
+            © 2025 – Antonia | Portfolio
+        </p>
+
+    </footer>
+
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
     <script src="main.js"></script>
+
 </body>
+
 </html>
